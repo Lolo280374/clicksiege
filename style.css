@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Cossette+Titre&display=swap');
+
+:root{
+    --bgGray: #333;
+    --bgLight: rgb(159, 157, 157);
+    --textPrimary: #ffffff;
+    --RedClickZone: #950000;
+    --ScoreSquareOne: #a0a094;
+    --ScoreSquareTwo: #4c4c45;
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+body{
+    background-color: var(--bgGray);
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    font-family: "Cossette Titre", sans-serif;
+    font-weight: bold;
+    background: var(--bgGray);
+}
+
+.click-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+    align-items: center;
+    background: var(--RedClickZone);
+    cursor: pointer;
+}
+
+.display-text {
+    padding: 24px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--textPrimary);
+}
+
+.scoreboard{
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--ScoreSquareTwo);
+}
+
+.scoreboard h2{
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: var(--textPrimary);
+}
+
+.score-list .score {
+    background: #777;
+    margin: 5px 0;
+    padding: 5px;
+    text-align: center;
+    border-radius: 4px;
+    color: var(--textPrimary);
+}
+
+.buttonsList button{
+    font-family: "Cossette Titre", sans-serif;
+    font-weight: bold;
+    background: #777777;
+    border:0;
+    color: rgba(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#shareScoreBtn{
+    display: none;
+    border:0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    color: var(--textPrimary);
+    background: var(--bgGray);
+}
+
+/* add light mode */
+body.light{
+    --bgGray: #f2f2f2;
+    --bgLight: #fff;
+    --textPrimary: #222;
+    --ScoreSquareOne: #e4e4e0;
+    --ScoreSquareTwo: #cccccc;
+    background-color: var(--bgGray);
+}
+
+body.light .score-list .score {
+    background: #cccccc;
+}
+
+body.light .scoreboard {
+    background: #e5e5e5;
+}
+
+body.light .buttonsList button {
+    background: #cccccc;
+    color: #222;
+}
+
+body.light .display-text{
+    color: var(--textPrimary);
+}
+
+body.light .click-area .display-text {
+    color: var(--bgLight);
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cossette+Titre&display=swap');
+
+body{
+    background-color: #333;
+    font-family: "Cossette Titre", sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
