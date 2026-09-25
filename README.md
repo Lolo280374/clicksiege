@@ -1,7 +1,7 @@
 # 🔥 clickSiege
 
 <p align="center">
-  <a href="https://click.lolodotzip.tech/">
+  <a href="https://click.lolodotzip.me/">
     <img src="https://github.com/user-attachments/assets/21885311-bedb-4c60-94ca-d6f6356dbffe" width="500" />
   </a>
 
